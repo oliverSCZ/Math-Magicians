@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import './calculator.css';
 import calculate from '../logic/calculate';
-import '../logic/operate';
 
 class Calculator extends Component {
   constructor(props) {
