@@ -3,16 +3,17 @@
   justify-content: flex-start;
   width: 96%;
 }
+
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  align-items: left;
   width: 90%;
   max-width: 800px;
   margin-top: 6rem;
   padding-left: 10%;
 }
-.calc_text > h3{
+
+.calc_text > h3 {
   top: 15rem;
   text-align: left;
   padding-top: 24%;
