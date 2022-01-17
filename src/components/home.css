@@ -1,0 +1,30 @@
+.home {
+  position: absolute;
+  top: 10rem;
+  left: 2rem;
+  width: 90%;
+}
+
+.home > * {
+  padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 760px) {
+  .home {
+    top: 15rem;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .home h1 {
+    font-size: 3rem;
+    padding-bottom: 4rem;
+    text-align: left;
+  }
+
+  .home p {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+}
