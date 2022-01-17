@@ -1,24 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
-import calculate from './logic/calculate';
+import Home from './components/Home';
+import Quote from './components/Quote';
+import NavBar from './components/NavBar';
 
-const App = () => {
-  const [state, setState] = useState({
-    total: 0,
-    next: 0,
-  });
-  const handleClick = (e) => {
-    setState((old) => calculate(old, e.target.innerText));
-  };
-
-  const { total, next } = state;
-  const calcStates = { total, next };
-  return (
-    <div className="App">
-      <Calculator handleClick={handleClick} calcStates={calcStates} />
-    </div>
-  );
-};
+const App = () => (
+  <div className="App">
+    <NavBar />
+    <Routes>
+      <Route exact path="/calc" element={<Calculator />} />
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/quote" element={<Quote />} />
+    </Routes>
+  </div>
+);
 
 export default App;
