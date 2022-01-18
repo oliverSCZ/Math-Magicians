@@ -1,0 +1,42 @@
+.header {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-title {
+  padding-top: 4rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  padding-right: 1rem;
+  font-size: 1.6rem;
+}
+
+.active-link:link,
+.active-link:visited {
+  color: orangered;
+}
+
+@media only screen and (min-width: 760px) {
+  .header {
+    left: 2rem;
+  }
+
+  .nav-title {
+    padding-top: 6rem;
+    font-size: 4rem;
+  }
+
+  .nav-list {
+    justify-content: flex-end;
+    padding-right: 4rem;
+  }
+}
