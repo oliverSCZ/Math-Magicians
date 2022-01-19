@@ -1,4 +1,5 @@
 import operate from '../logic/operate';
+
 describe('Testing operate.js functions', () => {
   test('testing + operation', () => {
     expect(operate('11', '2', '+')).toEqual('13');
