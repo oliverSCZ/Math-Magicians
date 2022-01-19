@@ -9,7 +9,7 @@ const Calculator = () => {
     next: 0,
   });
   const handleClick = (e) => {
-    setState((old) => calculate(old, e.target.innerText));
+    setState((old) => calculate(old, e.target.textContent));
   };
 
   const { total, next } = state;
@@ -25,6 +25,8 @@ const Calculator = () => {
       <div className="calc_text"><h3>Let&apos;s do some Math!</h3></div>
       <div className="container">
         <input
+          id="output"
+          data-testid="output"
           className="grid-item display"
           placeholder="0"
           value={val}
