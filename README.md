@@ -15,7 +15,8 @@
 ## Live Demo
 
 [Live Demo Link](https://oliverscz.github.io/Math-Magicians/)
-
+[Heroku Link](https://math-mag1cians.herokuapp.com/)
+[Netlify Link](https://xenodochial-hamilton-52708c.netlify.app/)
 ## Getting Started
 
 ### Prerequisites
